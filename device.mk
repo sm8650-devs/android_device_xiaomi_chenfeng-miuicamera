@@ -5,7 +5,7 @@
 #
 
 # Inherit from the proprietary version
-$(call inherit-product, vendor/xiaomi/zorn-miuicamera/zorn-miuicamera-vendor.mk)
+$(call inherit-product, vendor/xiaomi/chenfeng-miuicamera/chenfeng-miuicamera-vendor.mk)
 
 # Camera
 $(call soong_config_set_bool,camera,override_format_from_reserved,true)
