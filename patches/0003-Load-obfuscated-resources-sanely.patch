@@ -1,16 +1,17 @@
-From 550d08d4c286ce629fea4a96603c7a08bc5115d9 Mon Sep 17 00:00:00 2001
-From: AdarshGrewal <adarshgrewal@gmail.com>
-Date: Wed, 3 Jun 2026 16:42:54 +0530
+From cab6772fd39a9e71fbcbf84d93ec4c2e35324abc Mon Sep 17 00:00:00 2001
+From: SMGReborn <vherawidatama@gmail.com>
+Date: Mon, 3 Aug 2026 19:49:59 +0700
 Subject: [PATCH 3/7] Load obfuscated resources sanely
 
+Signed-off-by: SMGReborn <vherawidatama@gmail.com>
 ---
- smali_classes4/F8/a.smali | 18 +++++++++++++++++-
+ smali/v8/a.smali | 18 +++++++++++++++++-
  1 file changed, 17 insertions(+), 1 deletion(-)
 
-diff --git a/smali_classes4/F8/a.smali b/smali_classes4/F8/a.smali
-index 47d0fcf5..c3ae57c0 100644
---- a/smali_classes4/F8/a.smali
-+++ b/smali_classes4/F8/a.smali
+diff --git a/smali/v8/a.smali b/smali/v8/a.smali
+index 035453763..09ea81048 100644
+--- a/smali/v8/a.smali
++++ b/smali/v8/a.smali
 @@ -166,7 +166,7 @@
  .end method
  
@@ -41,7 +42,7 @@ index 47d0fcf5..c3ae57c0 100644
 +    .catch Ljava/io/FileNotFoundException; {:try_start_9 .. :try_end_9} :catch_9
  
      :try_start_0
-     invoke-static {p2}, Lkotlin/jvm/internal/l;->c(Ljava/lang/Object;)V
+     invoke-static {p2}, Lkotlin/jvm/internal/k;->c(Ljava/lang/Object;)V
 @@ -311,6 +316,17 @@
  
      goto :goto_3
@@ -61,5 +62,5 @@ index 47d0fcf5..c3ae57c0 100644
      :try_start_3
      throw p0
 -- 
-2.54.0
+2.43.0
 
